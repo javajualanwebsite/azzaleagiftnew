@@ -1,0 +1,31 @@
+export const SITE_CONFIG = {
+  name: "Azzalea Handmade",
+  tagline: "Souvenir Pernikahan Handmade Mewah & Berkesan",
+  shortTagline: "Handcrafted Wedding Souvenirs & Gifts",
+  phoneDisplay: "08888533915",
+  phoneIntl: "628888533915",
+  whatsappUrl: "https://wa.me/628888533915",
+  instagramHandle: "@azzaleagiftnew",
+  instagramUrl: "https://instagram.com/azzaleagiftnew",
+  location: "Yogyakarta, Indonesia (Kirim ke Seluruh Nusantara)",
+  operatingHours: "Senin - Sabtu: 08.30 - 17.00 WIB",
+  email: "azzaleahandmade@gmail.com",
+  seo: {
+    title: "Azzalea Handmade | Souvenir Pernikahan Elegan & Personal",
+    description:
+      "Katalog souvenir pernikahan eksklusif 100% handmade: Paper Bag, Pillow, Pecah Belah, Box & Other. Free Custom Nama & Kartu Ucapan.",
+    keywords: [
+      "souvenir pernikahan",
+      "souvenir wedding",
+      "paper bag souvenir",
+      "pillow souvenir",
+      "pecah belah souvenir",
+      "box souvenir",
+      "azzalea handmade",
+      "souvenir pernikahan murah mewah",
+      "souvenir pernikahan jogja",
+      "souvenir pernikahan jakarta",
+      "custom emboss nama souvenir",
+    ],
+  },
+};
