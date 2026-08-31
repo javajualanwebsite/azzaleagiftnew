@@ -141,7 +141,7 @@ export const HeroSection: React.FC = () => {
                 <div className="relative h-80 sm:h-96 w-full">
                   <Image
                     src="/images/paperbag-costum-flora.jpg"
-                    alt="Azzalea paperbag costum flora"
+                    alt="Azzalea box costum flora"
                     fill
                     sizes="(max-width: 768px) 100vw, 500px"
                     className="object-cover"
@@ -164,7 +164,7 @@ export const HeroSection: React.FC = () => {
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <h3 className="font-serif font-bold text-sm text-primary-900">
-                          paperbag costum flora
+                          box costum flora
                         </h3>
                         <p className="text-[11px] text-charcoal-600">
                           Custom • MOQ 100 pcs

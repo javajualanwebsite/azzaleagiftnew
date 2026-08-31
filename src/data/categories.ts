@@ -7,8 +7,8 @@ export const CATEGORIES: Category[] = [
     slug: "semua",
     description: "Seluruh koleksi souvenir Azzalea Handmade — Paper Bag, Pillow, Pecah Belah, Box & Other",
     iconName: "Sparkles",
-    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80",
-    itemCount: 9,
+    image: "/images/paperbag-costum-flora.jpg",
+    itemCount: 14,
   },
   {
     id: "paper-bag",
@@ -16,7 +16,7 @@ export const CATEGORIES: Category[] = [
     slug: "paper-bag",
     description: "Paper bag custom floral eksklusif, laminasi doff tebal dengan tali pita satin & cetak nama mempelai",
     iconName: "ShoppingBag",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80",
+    image: "/images/paperbagwhite.png",
     itemCount: 2,
   },
   {
@@ -25,7 +25,7 @@ export const CATEGORIES: Category[] = [
     slug: "pillow",
     description: "Bantal souvenir mini & cushion custom bordir, boneka pillow lembut untuk kado tamu berkesan",
     iconName: "Heart",
-    image: "/images/pillow-costum.jpg",
+    image: "/images/pillow.png",
     itemCount: 1,
   },
   {
@@ -34,8 +34,8 @@ export const CATEGORIES: Category[] = [
     slug: "pecah-belah",
     description: "Souvenir pecah belah: mug keramik, piring & mangkok sablon custom dengan box eksklusif",
     iconName: "Sparkles",
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
-    itemCount: 2,
+    image: "/images/piringother.png",
+    itemCount: 1,
   },
   {
     id: "box",
@@ -43,8 +43,8 @@ export const CATEGORIES: Category[] = [
     slug: "box",
     description: "Box hampers premium: hardbox magnet, softbox & mika box dengan hotprint emas & pita cantik",
     iconName: "Package",
-    image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80",
-    itemCount: 2,
+    image: "/images/boxgreenn.png",
+    itemCount: 4,
   },
   {
     id: "other",
@@ -52,7 +52,7 @@ export const CATEGORIES: Category[] = [
     slug: "other",
     description: "Koleksi souvenir unik lainnya: towel, pouch serbaguna, lilin aromaterapi & custom request",
     iconName: "Gift",
-    image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=800&q=80",
-    itemCount: 2,
+    image: "/images/otherblinbox.png",
+    itemCount: 6,
   },
 ];

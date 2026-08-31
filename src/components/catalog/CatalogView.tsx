@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import {
   Search,
@@ -20,17 +20,30 @@ export const CatalogView: React.FC = () => {
   const initialCategory = searchParams.get("category") || "all";
 
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
+
+  // Sinkronkan state dengan URL (?category=...) agar klik dari homepage / CategoryGrid langsung terfilter
+  useEffect(() => {
+    const cat = searchParams.get("category") || "all";
+    setSelectedCategory(cat);
+  }, [searchParams]);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [sortBy, setSortBy] = useState<string>("popular");
   const [maxPrice, setMaxPrice] = useState<number>(100000);
 
-  // Client-side filtering & sorting (FR-03)
+  // Client-side filtering & sorting (FR-03) — robust: handle "paper bag" vs "paper-bag" vs "PaperBag"
+  const normalize = (s: string) => s.toLowerCase().trim().replace(/[\s_]+/g, "-").replace(/-+/g, "-");
+  const normalizeNoDash = (s: string) => s.toLowerCase().replace(/[\s\-_]+/g, "");
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter((product) => {
+      const selNorm = normalize(selectedCategory);
+      const selNoDash = normalizeNoDash(selectedCategory);
+      const prodNorm = normalize(product.category);
+      const prodNoDash = normalizeNoDash(product.category);
       const matchesCategory =
-        selectedCategory === "all" ||
-        selectedCategory === "semua" ||
-        product.category === selectedCategory;
+        selNorm === "all" ||
+        selNorm === "semua" ||
+        prodNorm === selNorm ||
+        prodNoDash === selNoDash;
 
       const matchesSearch =
         searchQuery === "" ||
