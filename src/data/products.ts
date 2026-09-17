@@ -1,7 +1,7 @@
 import { Product } from "@/types";
 
 export const PRODUCTS: Product[] = [
-  // ========== PAPER BAG ========== 
+  // ========== PAPER BAG ========== sisa 2 produk sesuai permintaan
   {
     id: "p1",
     name: "paperbag costum flora",
@@ -39,7 +39,7 @@ export const PRODUCTS: Product[] = [
     salesCount: 245,
   },
 
-  // ========== PILLOW ========== 
+  // ========== PILLOW ========== 1 produk sesuai permintaan
   {
     id: "p3",
     name: "pillow costum",
@@ -108,9 +108,9 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: "p6",
+    id: "p9",
     name: "Piring cantik",
-    slug: "piring-cantik",
+    slug: "Piring cantik",
     price: 999,
     moq: 100,
     category: "other",
@@ -136,7 +136,7 @@ export const PRODUCTS: Product[] = [
         extraPrice: 0,
       },
       {
-        id: "PiringCantik-plus",
+        id: "Piring Cantik",
         name: "piring cantik (+ Rp 999/pcs)",
         extraPrice: 999,
       },
@@ -153,8 +153,8 @@ export const PRODUCTS: Product[] = [
   {
     id: "p7",
     name: "Box cantik costum",
-    slug: "box-cantik-costum",
-    price: 25000,
+    slug: "hardbox-cantik-premium",
+    price: 25.000,
     moq: 100,
     category: "box",
     shortDescription:
@@ -199,8 +199,8 @@ export const PRODUCTS: Product[] = [
   {
     id: "p8",
     name: "Box cantik matcha",
-    slug: "box-cantik-matcha",
-    price: 35000,
+    slug: "hardbox-cantik-matcha",
+    price: 35.000,
     moq: 100,
     category: "box",
     shortDescription:
@@ -226,7 +226,7 @@ export const PRODUCTS: Product[] = [
         extraPrice: 0,
       },
       {
-        id: "hardbox-mika-top-matcha",
+        id: "hardbox-mika-top",
         name: "Tutup Mika Transparan (+ Rp 1.000/pcs)",
         extraPrice: 1000,
       },
@@ -243,10 +243,10 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: "p10",
+    id: "p7",
     name: "Box elegan costum",
-    slug: "box-elegan-costum",
-    price: 9999,
+    slug: "hardbox-cantik-premium",
+    price: 9.999,
     moq: 100,
     category: "box",
     shortDescription:
@@ -267,12 +267,12 @@ export const PRODUCTS: Product[] = [
     ],
     packagingOptions: [
       {
-        id: "hardbox-standard-elegan",
+        id: "hardbox-standard",
         name: "Hardbox + Pita Satin (Termasuk)",
         extraPrice: 0,
       },
       {
-        id: "hardbox-sekat-elegan",
+        id: "hardbox-mika-top",
         name: "costum sekat (+ Rp 1.000/pcs)",
         extraPrice: 1000,
       },
@@ -288,10 +288,10 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: "p11",
+    id: "p9",
     name: "Box standart setara premium",
-    slug: "box-standart-premium",
-    price: 10000,
+    slug: "hardbox-cantik-premium",
+    price: 10.000,
     moq: 100,
     category: "box",
     shortDescription:
@@ -312,12 +312,12 @@ export const PRODUCTS: Product[] = [
     ],
     packagingOptions: [
       {
-        id: "hardbox-standard-standart",
+        id: "hardbox-standard",
         name: "Hardbox + Pita Satin (Termasuk)",
         extraPrice: 0,
       },
       {
-        id: "hardbox-sekat-standart",
+        id: "hardbox-mika-top",
         name: "sekat(+ Rp 1.000/pcs)",
         extraPrice: 1000,
       },
@@ -334,9 +334,9 @@ export const PRODUCTS: Product[] = [
 
   // ========== OTHER ==========
   {
-    id: "p12",
+    id: "p9",
     name: "Blind Box Creativ",
-    slug: "blind-box-creativ",
+    slug: "Blind Box Creativ",
     price: 999,
     moq: 100,
     category: "other",
@@ -362,7 +362,7 @@ export const PRODUCTS: Product[] = [
         extraPrice: 0,
       },
       {
-        id: "BlindBox-plus",
+        id: "Blind Box",
         name: "blind Box Educatif (+ Rp 999/pcs)",
         extraPrice: 999,
       },
@@ -376,10 +376,10 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: "p13",
+    id: "p9",
     name: "Clock in the box",
-    slug: "clock-in-the-box",
-    price: 15000,
+    slug: "Clock in the box",
+    price: 15.000,
     moq: 100,
     category: "other",
     shortDescription:
@@ -399,12 +399,12 @@ export const PRODUCTS: Product[] = [
     ],
     packagingOptions: [
       {
-        id: "JamDalamBox",
+        id: "Jam dalam box",
         name: "packaging (Termasuk)",
         extraPrice: 0,
       },
       {
-        id: "JamDalamBox-plus",
+        id: "Jam dalam box",
         name: "box yang dibngkus box(+ Rp 999/pcs)",
         extraPrice: 999,
       },
@@ -418,9 +418,9 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: "p14",
+    id: "p9",
     name: "Dompet cantik",
-    slug: "dompet-cantik-berbahan-kulit",
+    slug: "Dompet cantik berbahan kulit",
     price: 999,
     moq: 100,
     category: "other",
@@ -446,7 +446,7 @@ export const PRODUCTS: Product[] = [
         extraPrice: 0,
       },
       {
-        id: "DompetKainKulit",
+        id: "Dompet berbahan kain bermotif kulit",
         name: "Dompet kain berbahan kulit (+ Rp 999/pcs)",
         extraPrice: 999,
       },
@@ -460,9 +460,9 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: "p15",
+    id: "p9",
     name: "Handuk lucu",
-    slug: "handuk-lucu",
+    slug: "Handuk lucu",
     price: 999,
     moq: 100,
     category: "other",
@@ -483,12 +483,12 @@ export const PRODUCTS: Product[] = [
     ],
     packagingOptions: [
       {
-        id: "SouvernirHanduk",
+        id: "Souvernir Handuk",
         name: "packaging (Termasuk)",
         extraPrice: 0,
       },
       {
-        id: "HandukLucu-plus",
+        id: "Handuk Lucu",
         name: "Souvernir handuk kreatif (+ Rp 999/pcs)",
         extraPrice: 999,
       },
@@ -502,9 +502,9 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: "p16",
+    id: "p9",
     name: "Box cantik eduatif",
-    slug: "box-cantik-edukatif",
+    slug: "Box cantik edukatif",
     price: 999,
     moq: 100,
     category: "other",
@@ -525,12 +525,12 @@ export const PRODUCTS: Product[] = [
     ],
     packagingOptions: [
       {
-        id: "BoxEdukatif",
+        id: "Box",
         name: "packaging (Termasuk)",
         extraPrice: 0,
       },
       {
-        id: "BoxGift-plus",
+        id: "Box dengan berbagai macam gift",
         name: "box Educatif (+ Rp 999/pcs)",
         extraPrice: 999,
       },

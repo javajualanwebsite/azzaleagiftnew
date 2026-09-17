@@ -7,7 +7,8 @@ export const SITE_CONFIG = {
   whatsappUrl: "https://wa.me/628888533915",
   instagramHandle: "@azzaleagiftnew",
   instagramUrl: "https://instagram.com/azzaleagiftnew",
-  location: "Yogyakarta, Indonesia (Kirim ke Seluruh Nusantara)",
+  location: "Perumahan Banjararum Blok R-1, Kel. Banjararum, Kec. Singosari, Kab. Malang",
+  locationDetail: "Perumahan Banjararum Blok R-1, Kel. Banjararum, Kec. Singosari, Kab. Malang — Kirim ke Seluruh Nusantara",
   operatingHours: "Senin - Sabtu: 08.30 - 17.00 WIB",
   email: "azzaleahandmade@gmail.com",
   seo: {
@@ -23,6 +24,8 @@ export const SITE_CONFIG = {
       "box souvenir",
       "azzalea handmade",
       "souvenir pernikahan murah mewah",
+      "souvenir pernikahan malang",
+      "souvenir pernikahan singosari",
       "souvenir pernikahan jogja",
       "souvenir pernikahan jakarta",
       "custom emboss nama souvenir",

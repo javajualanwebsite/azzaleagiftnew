@@ -74,9 +74,9 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Main Columns */}
+        {/* Main Columns — revisi setiap kolom: konsisten spacing & heading */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-12">
-          {/* Brand Info */}
+          {/* Kolom 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-primary-400 bg-white shadow-xs">
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
                 </span>
               </div>
             </div>
-
+            <div className="h-0.5 w-10 bg-primary-300 rounded-full" />
             <p className="text-xs text-charcoal-700 leading-relaxed font-medium">
               Rumah produksi souvenir pernikahan handmade bernuansa floral elegan.
               Menghadirkan cinderamata pernikahan yang manis, fungsional, dan berkesan bagi para tamu undangan.
@@ -125,16 +125,20 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Kategori */}
-          <div>
-            <h4 className="font-serif text-xs font-extrabold uppercase tracking-widest text-primary-800 mb-4 flex items-center gap-1.5">
-              <span>Kategori Souvenir</span> 🌸
-            </h4>
+          {/* Kategori — revisi kolom 2: pastikan link kategori tidak 404 */}
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-serif text-xs font-extrabold uppercase tracking-widest text-primary-800 flex items-center gap-1.5">
+                <span>Kategori Souvenir</span> 🌸
+              </h4>
+              <div className="h-0.5 w-10 bg-primary-300 rounded-full mt-2" />
+            </div>
             <ul className="space-y-2.5 text-xs text-charcoal-700 font-medium">
               {CATEGORIES.filter((c) => c.id !== "all").map((cat) => (
                 <li key={cat.id}>
                   <Link
-                    href={`/katalog?category=${cat.slug}`}
+                    href={`/katalog?category=${encodeURIComponent(cat.slug)}`}
+                    prefetch={false}
                     className="hover:text-primary-700 hover:translate-x-1 inline-flex items-center transition-all"
                   >
                     <span className="text-primary-400 mr-2">🌸</span>
@@ -145,15 +149,19 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-serif text-xs font-extrabold uppercase tracking-widest text-primary-800 mb-4 flex items-center gap-1.5">
-              <span>Informasi & Panduan</span> 🌸
-            </h4>
+          {/* Quick Links — revisi kolom 3: perbaiki 404, pastikan semua route ada */}
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-serif text-xs font-extrabold uppercase tracking-widest text-primary-800 flex items-center gap-1.5">
+                <span>Informasi & Panduan</span> 🌸
+              </h4>
+              <div className="h-0.5 w-10 bg-primary-300 rounded-full mt-2" />
+            </div>
             <ul className="space-y-2.5 text-xs text-charcoal-700 font-medium">
               <li>
                 <Link
                   href="/cara-order"
+                  prefetch={false}
                   className="hover:text-primary-700 hover:translate-x-1 inline-flex items-center transition-all"
                 >
                   <span className="text-primary-400 mr-2">🌸</span>
@@ -163,6 +171,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link
                   href="/tentang"
+                  prefetch={false}
                   className="hover:text-primary-700 hover:translate-x-1 inline-flex items-center transition-all"
                 >
                   <span className="text-primary-400 mr-2">🌸</span>
@@ -172,6 +181,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link
                   href="/kontak"
+                  prefetch={false}
                   className="hover:text-primary-700 hover:translate-x-1 inline-flex items-center transition-all"
                 >
                   <span className="text-primary-400 mr-2">🌸</span>
@@ -181,6 +191,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link
                   href="/katalog"
+                  prefetch={false}
                   className="hover:text-primary-700 hover:translate-x-1 inline-flex items-center transition-all"
                 >
                   <span className="text-primary-400 mr-2">🌸</span>
@@ -190,11 +201,14 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Kontak */}
-          <div>
-            <h4 className="font-serif text-xs font-extrabold uppercase tracking-widest text-primary-800 mb-4 flex items-center gap-1.5">
-              <span>Layanan Pelanggan</span> 🌸
-            </h4>
+          {/* Kolom 4: Layanan Pelanggan — alamat baru */}
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-serif text-xs font-extrabold uppercase tracking-widest text-primary-800 flex items-center gap-1.5">
+                <span>Layanan Pelanggan</span> 🌸
+              </h4>
+              <div className="h-0.5 w-10 bg-primary-300 rounded-full mt-2" />
+            </div>
             <ul className="space-y-3 text-xs text-charcoal-700 font-medium">
               <li className="flex items-start gap-2.5">
                 <MessageCircle className="w-4 h-4 text-[#25D366] flex-shrink-0 mt-0.5" />
@@ -228,7 +242,7 @@ export const Footer: React.FC = () => {
 
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-secondary-500 flex-shrink-0 mt-0.5" />
-                <span>{SITE_CONFIG.location}</span>
+                <span className="leading-relaxed">{SITE_CONFIG.location}</span>
               </li>
 
               <li className="flex items-start gap-2.5">
